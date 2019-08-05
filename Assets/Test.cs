@@ -6,12 +6,11 @@ public class Boss
 {
     private int mp = 53;
 
-    public void Magic()
+    public void Magic(int exh)
     {
-        int exh = 5;
-        this.mp -= exh;
-        if (mp >= 5)
+        if (mp >= exh)
         {
+            this.mp -= exh;
             Debug.Log("魔法攻撃をした。残りMPは" + mp + "。");
         }
         else
@@ -42,7 +41,7 @@ public class Test : MonoBehaviour {
         Boss boss = new Boss();
         for (int num = 1; num <= 11; num++)
         {
-            boss.Magic();
+            boss.Magic(5);
         }
     }
 	
