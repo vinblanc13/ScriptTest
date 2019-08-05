@@ -10,7 +10,7 @@ public class Boss
     {
         int exh = 5;
         this.mp -= exh;
-        if (mp >= 0)
+        if (mp >= 5)
         {
             Debug.Log("魔法攻撃をした。残りMPは" + mp + "。");
         }
