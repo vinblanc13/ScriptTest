@@ -32,9 +32,9 @@ public class Test : MonoBehaviour {
             Debug.Log(array[i]);
         }
         //逆順
-        for (int x = array.Length; x > 0; x--)
+        for (int x = array.Length - 1; x >= 0; x--)
         {
-            Debug.Log(array[x - 1]);
+            Debug.Log(array[x]);
         }
 
         //Boss
